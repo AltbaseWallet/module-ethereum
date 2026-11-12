@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "abiVersion": 1,
+  "id": "ethereum",
+  "name": "Ethereum",
+  "ticker": "ETH",
+  "version": "0.1.5",
+  "kind": "account",
+  "networkId": "ethereum-mainnet",
+  "decimals": 18,
+  "capabilities": [
+    "derive",
+    "validate",
+    "snapshot",
+    "nodeRequest",
+    "assets",
+    "importAsset",
+    "setAssetVisibility",
+    "prepareTransfer",
+    "send"
+  ],
+  "runtime": {
+    "type": "javascript",
+    "entry": "load.cjs",
+    "binaryPlatforms": {
+      "linux-x64": "altbase_ethereum.so",
+      "win32-x64": "altbase_ethereum.dll"
+    }
+  },
+  "icon": "icon.png"
+}
